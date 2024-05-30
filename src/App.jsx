@@ -1,15 +1,16 @@
 import { useState } from 'react'
+import RecentLeaveRequests from './component/leave/RecentLeaveRequests'
+import RecentLeaves from './component/leave/RecentLeaves'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div className='flex justify-center items-center h-[100vh]' >
-      <h1 className='text-purple-500 font-bold text-2xl'> 
-      Most welcome everyone
-      </h1>
+      <div className='flex justify-center items-center h-[550px] ' >
+        <RecentLeaveRequests />
+        <RecentLeaves/>
        </div>
     </>
   )
