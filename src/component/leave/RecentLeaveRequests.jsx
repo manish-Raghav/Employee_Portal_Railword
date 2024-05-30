@@ -61,7 +61,7 @@ const RecentLeaveRequests = () => {
     Approved: "bg-green-200 text-green-800",
   }
   return (
-    <div className="p-3 bg-white rounded-lg shadow-md w-[646px] overflow-hidden m-4 absolute bottom-0 right-0">
+    <div className="p-3 bg-white rounded-lg shadow-md   overflow-hidden m-4 ">
       <h2 className="text-xl font-semibold mb-4 ">Recent Leave request</h2>
       <table className=" w-full text-left  ">
         <thead>

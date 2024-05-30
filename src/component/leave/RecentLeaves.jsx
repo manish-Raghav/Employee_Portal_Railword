@@ -31,7 +31,7 @@ const statusClasses = {
 
 const RecentLeaves = () => {
   return (
-    <div className="p-6 bg-white rounded-lg shadow-md w-[646px] overflow-hidden m-4 absolute  right-0">
+    <div className="p-6 bg-white rounded-lg shadow-md  overflow-hidden m-4 ">
       <h2 className="text-xl font-semibold mb-4">My recent Leave's</h2>
       <table className="w-full text-left">
         <thead>
