@@ -1,16 +1,15 @@
 import { useState } from 'react'
+import Attendance from './components/Attendance'
+import EditProfile from './components/EditProfile'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-      <div className='flex justify-center items-center h-[100vh]' >
-      <h1 className='text-purple-500 font-bold text-2xl'> 
-      Most welcome everyone
-      </h1>
-       </div>
+     <Attendance/> 
+     {/* <EditProfile/> */}
     </>
   )
 }
