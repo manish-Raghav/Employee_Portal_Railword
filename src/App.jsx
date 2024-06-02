@@ -1,16 +1,20 @@
 import { useState } from 'react'
-
+import Employee from './Component/Employee'
+import Header from './Component/Header'
+import Sidebar from './Component/Sidebar'
+import { MdClass } from 'react-icons/md'
+import AddEmployee from './Component/AddEmployee'
+ 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='flex justify-center items-center h-[100vh]' >
-      <h1 className='text-purple-500 font-bold text-2xl'> 
-      Most welcome everyone
-      </h1>
-       </div>
+  <div className='bg-slate-300 h-auto'> 
+    <Header />
+    <Employee />
+    </div>
     </>
   )
 }
