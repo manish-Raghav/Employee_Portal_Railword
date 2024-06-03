@@ -29,12 +29,12 @@ const AddEmployee = ({setformisActive ,setIsActive}) => {
   }
 
   return (
-    <div className="container  mx-auto p-6 ">
-    <div className="flex justify-between items-center ">
+    <div className="container w-[65rem] flex mx-auto p-6 border-[1px] border-green-600  mt-8 relative bg-white">
+    <div className="flex justify-between  absolute top-0 items-center ">
           <h2 className="text-2xl font-semibold text-gray-700">New Employee Information</h2>
           
         </div>
-      <div className="w-[63rem]  bg-white shadow-md rounded-lg p-4">
+      <div className="w-[65rem]  bg-white shadow-md rounded-lg p-4 mt-4">
         
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

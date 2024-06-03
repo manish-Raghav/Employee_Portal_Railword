@@ -3,10 +3,23 @@ import { CiUser } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import EmpData from './EmpData';
-import { Front } from '../Data/Fronend';
-import { Back } from '../Data/Backend';
+import { Front } from '../../Data/Fronend';
+import { Back } from '../../Data/Backend';
 import { FaUsers } from "react-icons/fa";
 import AddEmployee from './AddEmployee';
+
+
+
+
+
+
+
+// className={`nav-link ${
+//   activeLink === "Dashboard" ? "active" : "text-dark"
+// }`}
+// aria-current={activeLink === "Dashboard" ? "page" : undefined}
+// onClick={() => handleSetActive("Dashboard")}
+
 
 
 
@@ -14,7 +27,11 @@ const Employee = () => {
     const [st,setst] =useState(false)
     const [data,setdata] = useState([]);
     const [isActive, setIsActive] = useState(true);
-    const [formisActive ,setformisActive] =  useState(true);
+    const [formisActive ,setformisActive] =  useState(true)
+    const [activeLink, setActiveLink] = useState("frontend");
+
+
+
 
     useEffect(()=>{
       setdata(Front);
@@ -46,7 +63,7 @@ const mybt = () =>{
 
   return (
 
-    <section className=' w-[76vw]   z-40 relative left-[20rem] top-16  p-3   '>
+    <section className=' w-[76vw]   z-40 relative left-[4rem] top-16  p-3   '>
      {
         st ? <div className='bg-violet-600 w-48 gap-2 flex h-14 items-center  justify-center rounded-md absolute top-0 bottom-8 right-4 cursor-pointer'>
 
@@ -88,7 +105,10 @@ const mybt = () =>{
             </div>
         
            <div className=''>
-             <h1 className='font-semibold text-lg   ' onClick={Fnt}>
+             <h1 
+               className={'font-semibold text-lg '}
+                 onClick={() => Fnt()}
+             >
               Frontend
             </h1>
           </div>
@@ -96,7 +116,7 @@ const mybt = () =>{
         </div>
 
 
-        <div className='flex gap-2 cursor-pointer'>
+        <div className='flex gap-2 cursor-pointer hover:text-violet-600 focus:text-violet-600'>
             <div className='mt-1'>
             <FaUser  className=' text-lg'/>
             </div>
@@ -109,7 +129,7 @@ const mybt = () =>{
            
         </div>
 
-        <div className='flex gap-2 cursor-pointer'>
+        <div className='flex gap-2 cursor-pointer hover:text-violet-600 focus:text-violet-600'>
             <div className='mt-1'>
             <FaUser  className=' text-lg'/>
             </div>

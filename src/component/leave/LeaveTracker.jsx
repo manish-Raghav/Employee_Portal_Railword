@@ -10,7 +10,7 @@ const LeaveTracker = ({ total, used }) => {
   return (
     <div className="flex flex-row items-start justify-start flex-wrap">
       {/* Casual Leave */}
-      <div className="flex items-center justify-start p-5 rounded-lg shadow-md bg-white w-94 font-sans m-2">
+      <div className="flex items-center justify-start p-5 rounded-lg shadow-md bg-white w-80 h-32 font-sans m-2 border-[3px] border-green-500">
         <div className="w-32 h-32 mr-3">
           <CircularProgressbar
             value={percentage}
@@ -22,7 +22,7 @@ const LeaveTracker = ({ total, used }) => {
             })}
           />
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col w-56 justify-center">
           <h3 className="m-0 mb-2 text-lg text-gray-900">Casual leave</h3>
           <div className="ml-5 text-sm text-gray-600">
             <div className="flex items-center mb-1">

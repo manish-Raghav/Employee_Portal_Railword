@@ -1,14 +1,29 @@
 import { useState } from 'react'
-
+import Header from './Component/Header/Header'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Sidebar from './Component/Header/SideBar';
+import MyRoutes from './Component/MyRoutes';
+// import Routes from './Component/Routes';
 
 function App() {
   return (
     <>
-      <div className='flex justify-center items-center h-[100vh]' >
-      <h1 className='text-purple-500 font-bold text-2xl'> 
-      Most welcome everyone
-      </h1>
+     
+       <div className=' h-[160vh] w-full bg-[#dde2e6]' >
+       <div className='flex flex-col bg-[#dde2e6]  w-full '  >
+       <Header />
+       <div className='flex'>
+        <Sidebar />
+        
+         <MyRoutes />
+         
        </div>
+       </div>
+     
+         
+         
+       </div>
+       
     </>
   )
 }

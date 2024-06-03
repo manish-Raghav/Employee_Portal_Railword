@@ -31,7 +31,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar   className=" w-[97vw] h-[10vh] bg-slate-50 rounded-b-lg ml-2  ">
       <Container>
         <Row className="w-100">
           <Col className="d-flex align-items-center ">

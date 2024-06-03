@@ -22,7 +22,7 @@ const EmpData = ({data}) => {
 
     console.log('emp_data componet here ---> ',data)
     return (
-        <div className="overflow-x-auto h-auto relative bottom-2">
+        <div className="overflow-x-auto h-auto  relative  bottom-2">
           <table className="min-w-full bg-white">
             <thead className="">
               <tr>
@@ -67,8 +67,8 @@ const EmpData = ({data}) => {
           </table>
 
           
-          <div className="flex justify-between items-center py-3">
-        <div className="text-gray-600">
+          <div className="flex justify-between bg-white items-center py-3  rounded-b-xl">
+        <div className="text-gray-600 ml-4">
           Showing {indexOfFirstEmployee + 1} to {indexOfLastEmployee > data.length ? data.length : indexOfLastEmployee} out of {data.length} records
         </div>
         <div className="flex items-center space-x-2">
