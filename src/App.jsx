@@ -10,7 +10,7 @@ function App() {
     <>
      
        <div className=' h-[160vh] w-full bg-[#dde2e6]' >
-       <div className='flex flex-col bg-[#dde2e6]  w-full '  >
+       <div className='flex flex-col   w-full '  >
        <Header />
        <div className='flex'>
         <Sidebar />

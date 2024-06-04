@@ -1,0 +1,40 @@
+.dataCard {
+  display: flex;
+  margin-top: 20px;
+}
+
+.sCard {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  margin-left: 20px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.font {
+  font-size: 13px;
+}
+
+.fontColor {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.separator {
+  margin: 7px;
+}
+
+.updateInfo {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
