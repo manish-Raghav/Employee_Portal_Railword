@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Container, Row, Col, Nav } from "react-bootstrap";
+import React, {useState, useEffect} from "react"
+import "bootstrap-icons/font/bootstrap-icons.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import {Navbar, Container, Row, Col, Nav} from "react-bootstrap"
 
 const Header = () => {
   const [dateTime, setDateTime] = useState({
@@ -12,7 +12,7 @@ const Header = () => {
       month: "long",
       day: "numeric",
     }),
-  });
+  })
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -24,20 +24,18 @@ const Header = () => {
           month: "long",
           day: "numeric",
         }),
-      });
-    }, 1000);
+      })
+    }, 1000)
 
-    return () => clearInterval(timer);
-  }, []);
+    return () => clearInterval(timer)
+  }, [])
 
   return (
-    <Navbar   className=" w-[97vw] h-[10vh] bg-slate-50 rounded-b-lg ml-2  ">
+    <Navbar className=" w-[97vw] h-[10vh] bg-slate-50 rounded-b-lg   ">
       <Container>
         <Row className="w-100">
-          <Col className="d-flex align-items-center ">
-            <h4
-              style={{ marginRight: 100, marginLeft: -60, cursor: "pointer" }}
-            >
+          <Col className="d-flex align-items-center pl-40  ">
+            <h4 style={{marginRight: 100, marginLeft: -60, cursor: "pointer"}}>
               monitor
             </h4>
 
@@ -75,7 +73,7 @@ const Header = () => {
         </Row>
       </Container>
     </Navbar>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
