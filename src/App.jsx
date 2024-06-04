@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Attendance from './components/Attendance'
-import EditProfile from './components/EditProfile'
+// import EditProfile from './components/EditProfile'
 
 
 function App() {

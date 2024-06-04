@@ -68,12 +68,12 @@ const Attendance = () => {
                         <tbody className="bg-white">
                             {filteredData.map((data, index) => (
                                 <tr key={index}>
-                                    <td className="px-2 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.date}</td>
-                                    <td className="px-2 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.checkin}</td>
-                                    <td className="px-2 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.checkout}</td>
-                                    <td className="px-2 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.break}</td>
-                                    <td className="px-2 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.workingHours}</td>
-                                    <td className="px-2 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">
+                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.date}</td>
+                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.checkin}</td>
+                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.checkout}</td>
+                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.break}</td>
+                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.workingHours}</td>
+                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">
                                         <span
                                             className={`inline-block py-1 px-3 rounded-md ${getStatus(data.checkin) === 'On Time' ? 'text-green-500 bg-green-100' : 'text-red-500 bg-red-100'}`}
                                         >
