@@ -45,23 +45,9 @@ const Report = () => {
         },
     ]);
 
-    const [filterText, setFilterText] = useState('');
-
-    const filteredData = employeeData.filter((employee) =>
-        employee.name.toLowerCase().includes(filterText.toLowerCase())
-    );
-
     return (
         <div className="main">
             <h1>Recent Senior Employee Report</h1>
-            <div className="filter-container">
-                <input
-                    type="text"
-                    placeholder="Filter by name"
-                    value={filterText}
-                    onChange={(e) => setFilterText(e.target.value)}
-                />
-            </div>
             <table className="employee-table">
                 <thead>
                     <tr>
@@ -74,7 +60,7 @@ const Report = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {filteredData.map((employee, index) => (
+                    {employeeData.map((employee, index) => (
                         <tr key={index}>
                             <td>{employee.name}</td>
                             <td>{employee.employeeId}</td>
@@ -90,4 +76,4 @@ const Report = () => {
     );
 }
 
-export default Report;
+export default Report
