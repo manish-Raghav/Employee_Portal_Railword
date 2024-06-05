@@ -27,7 +27,7 @@ const LeaveApplicationForm = () => {
 
   return (
     <form
-      className="max-w-lg mx-auto p-8 bg-white shadow-md rounded-lg"
+      className="max-w-[450px]  mx-auto p-8 bg-white shadow-md rounded-lg"
       onSubmit={handleSubmit}
     >
       <h2 className="text-2xl font-bold mb-2">Leave Application Form</h2>
