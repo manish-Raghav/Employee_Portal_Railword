@@ -26,12 +26,10 @@ const Layout = () => {
 
   return (
     <>
-      <Header />
+     
       <Container fluid>
         <Row>
-          <Col xs={2} className="p-0">
-            <Sidebar />
-          </Col>
+          
           <Col xs={10}>
             <Row>
               <Col xs={5}>
