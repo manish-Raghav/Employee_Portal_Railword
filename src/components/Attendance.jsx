@@ -28,26 +28,26 @@ const Attendance = () => {
     };
 
     return (
-        <div className="relative w-[1440px] h-[850px] mx-auto ">
-            <div className="w-[1440px] h-[64px] bg-gray-300 sticky  top-0 z-50"></div>
+        <div className="relative w-full h-[850px] mx-auto">
+            <div className="w-full h-[64px] bg-gray-300 sticky top-0 z-50"></div>
             <div className="w-[320px] h-[680px] bg-gray-400 fixed top-[64px]"></div>
-            <div className="absolute w-[1066px] h-[850px] bg-white rounded-lg top-[80px] left-[352px] p-4 shadow-lg">
-                <h1 className="text-[23px] text-blue-950  font-medium mb-4">Attendance Overview</h1>
+            <div className="absolute w-[calc(100%-352px)] h-[850px] bg-white rounded-lg top-[80px] left-[352px] p-4 shadow-lg">
+                <h1 className="text-[23px] text-blue-950 font-medium mb-4">Attendance Overview</h1>
                 <div className="flex mb-4">
-                    <div className="mr-4 flex items-center gap-2 ">
+                    <div className="mr-4 flex items-center gap-2">
                         <label className="block text-sm font-medium text-gray-700">From</label>
                         <input
                             type="date"
-                            className="mt-1  block w-full bg-zinc-300 px-3 py-1  border  border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
+                            className="mt-1 block w-full bg-zinc-300 px-3 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
                             value={startDate}
                             onChange={(e) => setStartDate(e.target.value)}
                         />
                     </div>
-                    <div className='mr-4 flex items-center gap-2'>
+                    <div className="mr-4 flex items-center gap-2">
                         <label className="block text-sm font-medium text-gray-700">To</label>
                         <input
                             type="date"
-                            className="mt-1 block w-full  bg-zinc-300 px-3 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
+                            className="mt-1 block w-full bg-zinc-300 px-3 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
                             value={endDate}
                             onChange={(e) => setEndDate(e.target.value)}
                         />
@@ -57,30 +57,29 @@ const Attendance = () => {
                     <table className="min-w-full bg-white">
                         <thead>
                             <tr>
-                                <th className="px-4 py-4 text-[21.6px]  border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider">Date</th>
-                                <th className="px-4 py-4 text-[21.6px]  border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider">Check-in</th>
-                                <th className="px-4 py-4 text-[21.6px]  border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider">Check-out</th>
-                                <th className="px-4 py-4  text-[21.6px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider">Break</th>
-                                <th className="px-4 py-4 text-[21.6px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider">Working Hours</th>
-                                <th className="px-4 py-4 text-[21.6px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider">Status</th>
+                                <th className="px-4 py-4 text-[17px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider whitespace-nowrap">Date</th>
+                                <th className="px-4 py-4 text-[17px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider whitespace-nowrap">Check-in</th>
+                                <th className="px-4 py-4 text-[17px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider whitespace-nowrap">Check-out</th>
+                                <th className="px-4 py-4 text-[17px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider whitespace-nowrap">Break</th>
+                                <th className="px-4 py-4 text-[17px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider whitespace-nowrap">Working Hours</th>
+                                <th className="px-4 py-4 text-[17px] border-b-2 border-gray-300 font-normal text-left leading-4 text-zinc-400 tracking-wider whitespace-nowrap">Status</th>
                             </tr>
                         </thead>
                         <tbody className="bg-white">
                             {filteredData.map((data, index) => (
                                 <tr key={index}>
-                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.date}</td>
-                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.checkin}</td>
-                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.checkout}</td>
-                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.break}</td>
-                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">{data.workingHours}</td>
-                                    <td className="px-4 py-2 text-[21.6px]	 whitespace-no-wrap border-b font-normal border-gray-100">
+                                    <td className="px-4 py-2 text-[16px] whitespace-nowrap border-b font-normal border-gray-100">{data.date}</td>
+                                    <td className="px-4 py-2 text-[16px] whitespace-nowrap border-b font-normal border-gray-100">{data.checkin}</td>
+                                    <td className="px-4 py-2 text-[16px] whitespace-nowrap border-b font-normal border-gray-100">{data.checkout}</td>
+                                    <td className="px-4 py-2 text-[16px] whitespace-nowrap border-b font-normal border-gray-100">{data.break}</td>
+                                    <td className="px-4 py-2 text-[16px] whitespace-nowrap border-b font-normal border-gray-100">{data.workingHours}</td>
+                                    <td className="px-4 py-2 text-[16px] whitespace-nowrap border-b font-normal border-gray-100">
                                         <span
                                             className={`inline-block py-1 px-3 rounded-md ${getStatus(data.checkin) === 'On Time' ? 'text-green-500 bg-green-100' : 'text-red-500 bg-red-100'}`}
                                         >
                                             {getStatus(data.checkin)}
                                         </span>
                                     </td>
-
                                 </tr>
                             ))}
                         </tbody>
