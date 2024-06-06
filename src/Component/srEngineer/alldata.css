@@ -1,0 +1,11 @@
+.TaskContainer {
+  border-radius: 28px;
+  background-color: #fff;
+}
+.completed-projects-heading {
+  font-weight: 700;
+}
+.table thead th{
+    color: #b1abab !important;
+    font-weight: 400;
+}
