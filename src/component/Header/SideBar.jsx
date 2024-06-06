@@ -1,25 +1,23 @@
- import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Employee from "../Employee/Employee";
+import React, {useState} from "react"
+import {Link} from "react-router-dom"
+import Employee from "../employee/Employee"
 
 const Sidebar = () => {
-  const [activeLink, setActiveLink] = useState("Dashboard");
+  const [activeLink, setActiveLink] = useState("Dashboard")
 
-  const handleSetActive = (linkName) => {
-    setActiveLink(linkName);
-  };
+  const handleSetActive = linkName => {
+    setActiveLink(linkName)
+  }
 
   return (
     <div
-    className="d-flex flex-column flex-shrink-0 p-3 bg-light bg-transparent z-40"
-      style={{ width: "250px", height: "100vh" }}
+      className="d-flex flex-column flex-shrink-0 p-3 bg-light bg-transparent z-40"
+      style={{width: "250px", height: "100vh"}}
     >
       <ul className="nav nav-pills flex-column mb-auto gap-3">
-
-
-
         <li className="nav-item">
-          <Link to="/"
+          <Link
+            to="/"
             className={`nav-link ${
               activeLink === "Dashboard" ? "active" : "text-dark"
             }`}
@@ -30,14 +28,9 @@ const Sidebar = () => {
           </Link>
         </li>
 
-
-
-
-
-        
         <li>
-       
-        <Link to="/attendance"
+          <Link
+            to="/attendance"
             className={`nav-link ${
               activeLink === "Attendance" ? "active" : "text-dark"
             }`}
@@ -48,11 +41,9 @@ const Sidebar = () => {
           </Link>
         </li>
 
-
-
-
         <li>
-        <Link to="/profile"
+          <Link
+            to="/profile"
             className={`nav-link ${
               activeLink === "Profile" ? "active" : "text-dark"
             }`}
@@ -63,12 +54,9 @@ const Sidebar = () => {
           </Link>
         </li>
 
-
-
-
         <li className="cursor-pointer">
-        <Link to="/Employee"
-          
+          <Link
+            to="/Employee"
             className={`nav-link ${
               activeLink === "Employee" ? "active" : "text-dark"
             }`}
@@ -78,13 +66,10 @@ const Sidebar = () => {
             <i className="bi bi-people"></i> Employee
           </Link>
         </li>
-        
-
-
-
 
         <li>
-        <Link to="/project"
+          <Link
+            to="/project"
             className={`nav-link ${
               activeLink === "Projects" ? "active" : "text-dark"
             }`}
@@ -95,12 +80,9 @@ const Sidebar = () => {
           </Link>
         </li>
 
-
-
-
-
         <li>
-        <Link to="/Leave"
+          <Link
+            to="/Leave"
             className={`nav-link ${
               activeLink === "Leave" ? "active" : "text-dark"
             }`}
@@ -111,20 +93,11 @@ const Sidebar = () => {
           </Link>
         </li>
 
-
-
-       
-
-
-
-
         <li>
-      
-         
           {/* <Link to={'/Reporting'} */}
 
-          <Link to="/reporting"
-            
+          <Link
+            to="/reporting"
             className={`nav-link ${
               activeLink === "Reporting" ? "active" : "text-dark"
             }`}
@@ -135,10 +108,9 @@ const Sidebar = () => {
           </Link>
         </li>
 
-
-
         <li>
-        <Link to="/feedback"
+          <Link
+            to="/feedback"
             className={`nav-link ${
               activeLink === "Feedback" ? "active" : "text-dark"
             }`}
@@ -149,12 +121,9 @@ const Sidebar = () => {
           </Link>
         </li>
 
-
-
-
-
         <li>
-        <Link to="/logout"
+          <Link
+            to="/logout"
             className={`nav-link ${
               activeLink === "Logout" ? "active" : "text-dark"
             }`}
@@ -166,7 +135,7 @@ const Sidebar = () => {
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
