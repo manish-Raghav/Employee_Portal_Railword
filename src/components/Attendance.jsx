@@ -29,9 +29,14 @@ const Attendance = () => {
 
     return (
         <div className="relative w-full h-[850px] mx-auto">
-            <div className="w-full h-[64px] bg-gray-300 sticky top-0 z-50"></div>
+            <div className="w-full h-[64px] bg-gray-300 sticky top-0 z-50">
+              
+            </div>
+            
             <div className="w-[320px] h-[680px] bg-gray-400 fixed top-[64px]"></div>
+             
             <div className="absolute w-[calc(100%-352px)] h-[850px] bg-white rounded-lg top-[80px] left-[352px] p-4 shadow-lg">
+
                 <h1 className="text-[23px] text-blue-950 font-medium mb-4">Attendance Overview</h1>
                 <div className="flex mb-4">
                     <div className="mr-4 flex items-center gap-2">
