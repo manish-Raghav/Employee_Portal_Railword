@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+/* .sidebar {
+  background-color: #333;
+  padding: 20px;
+} */
+
+.main {
+  flex: 1;
+  padding: 20px 20px 40px 20px;
+  background-color: #fff;
+  margin: 30px;
+  width: 55vw;
+  height: 110vh;
+  border-radius: 34px;
+}
+
+.main h1,
+.my-report h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 25px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.employee-table,
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td,
+.table th,
+.table td {
+  padding: 10px;
+}
+
+.employee-table th,
+.table th {
+  color: #a2a1a8;
+}
+
+/* .employee-table {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+} */
+
+.employee-name {
+  display: flex;
+  align-items: center;
+}
+
+.employee-name img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* report form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.report-form {
+  padding: 30px;
+  background-color: #fff;
+  margin: 30px;
+  width: auto;
+  height: auto;
+  border-radius: 34px;
+}
+
+.report-container {
+  width: 100%;
+  padding: auto;
+}
+
+.report-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.report-form select,
+.report-form input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #151414;
+  border-radius: 4px;
+}
+.report-form button[type="submit"] {
+  background-color: #4c4eaf;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  width: 100%;
+  transition: ease-in-out 0.2s;
+}
+.report-form button[type="submit"]:hover {
+  background-color: #3b0487;
+}
+.report-form h2 {
+  font-weight: bold;
+  padding: 2px 0 4px 0;
+}
+
+.report-form small {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6e5e8;
+}
+
+.my-report {
+  margin-top: 20vh;
+}
