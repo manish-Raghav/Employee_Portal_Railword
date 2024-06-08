@@ -1,11 +1,10 @@
-// CardsList.jsx
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchCards } from "../src/features/cardsSlice";
+import { fetchCards } from "./features/cardsSlice";
 import { Link } from "react-router-dom";
-import './cardlist.css';
+import "./cardlist.css";
 
-const CardsList = ({ onSeeAllClick }) => {
+const CardsList = ({ onCardClick, onSeeAllClick }) => {
   const dispatch = useDispatch();
   const cards = useSelector((state) => state.cards.cards);
   const status = useSelector((state) => state.cards.status);
@@ -34,21 +33,25 @@ const CardsList = ({ onSeeAllClick }) => {
   const cardsToShow = showAll ? cards : cards.slice(0, 2);
 
   return (
-    <div className="container mt-3">
-      <div className="header ">
+    <div className="custom-container mt-3">
+      <div className="custom-header">
         <h1>Projects</h1>
-        <button className="see-all-btn" onClick={handleSeeAllClick}>
-          {showAll ? "See Less" : "See All"}
+        <button className="custom-see-all-btn" onClick={handleSeeAllClick}>
+          See All
         </button>
       </div>
-      <div className="card-container">
+      <div className="custom-card-container">
         {cardsToShow.map((card, index) => (
-          <div className="card" key={index}>
+          <div
+            className="custom-card"
+            key={index}
+            onClick={() => onCardClick(card)}
+          >
             <img src={card.photo} alt={card.title} />
             <h2>{card.heading}</h2>
             <p>{card.text}</p>
             <Link to={`/card/${index}`}>
-              <button className="view-all-btn">View All</button>
+              <button className="custom-view-all-btn">View All</button>
             </Link>
           </div>
         ))}
