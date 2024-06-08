@@ -9,6 +9,7 @@ import Profile from "./Profile/Profile"
 import Feedback from "./FeedBack/Feedback"
 import ChatComp from "./challengesAndSolutions/ChatComp"
 import ChallengesAndSolutions from "./challengesAndSolutions/ChallengesAndSolutions"
+import AdminDashboard from "./DashBoard/Admin/AdminDashboard"
 
 const MyRoutes = () => {
   return (
@@ -27,7 +28,7 @@ const MyRoutes = () => {
           path="/challengesAndSolutions"
           element={<ChallengesAndSolutions />}
         />
-        {/* <Route path='/Leave' element={<LeaveComp /> } /> */}
+        <Route path="/DashBoard" element={<AdminDashboard />} />
       </Routes>
     </div>
   )
