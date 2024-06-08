@@ -30,7 +30,7 @@ const AdminDashboard = () => {
       {time: "11:00", title: "React JS", description: "TL Meeting"},
     ]
   return (
-    <div className="grid grid-cols-2 mx-auto p-4 ">
+    <div className="grid grid-cols-2 mx-auto p-4 bg-white rounded-xl mt-4">
       <div className="grid grid-cols-2 w-[700px] gap-4">
         {branches.map((branch, index) => (
           <BranchCard key={index} branch={branch} />
