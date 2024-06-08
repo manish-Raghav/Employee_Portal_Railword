@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import ReportForm from './ReportForm';
 import "../report.css"
 
 const ReportList = () => {
-    const [reportData, setReportData] = useState([]);
     const employeeData = [
         {
             img: "https://i.pinimg.com/564x/05/5a/91/055a91979264664a1ee12b9453610d82.jpg",
@@ -53,22 +51,20 @@ const ReportList = () => {
     ];
 
 
-    const fetchReport = () => {
-        // Replace with your actual API call or data fetching logic
-        const mockData = [
-            { task: 'Figma Design', detail: 'Link/doc.pdf', date: 'July 14, 2023' },
-            // Add more mock data entries
-        ];
-        setReportData(mockData);
-    };
+    // Replace with your actual API call or data fetching logic
+    const mockData = [
+        { task: 'Figma Design', detail: 'Link/doc.pdf', date: 'July 14, 2023' },
+        { task: 'Figma Design', detail: 'Link/doc.pdf', date: 'July 14, 2023' },
+        { task: 'Figma Design', detail: 'Link/doc.pdf', date: 'July 14, 2023' },
+        { task: 'Figma Design', detail: 'Link/doc.pdf', date: 'July 14, 2023' },
+    ];
 
-    console.log(reportData);
 
     return (
         <div className="main-container">
             <div className="container">
                 <div className="sidebar">
-                    <ReportForm employee={employeeData} fetchReport={fetchReport} />
+                    <ReportForm employee={employeeData} />
                 </div>
 
                 <div className="main">
@@ -112,7 +108,7 @@ const ReportList = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {reportData.map((item, index) => (
+                                {mockData.map((item, index) => (
                                     <tr key={index}>
                                         <td>{item.task}</td>
                                         <td><a href="#">{item.detail}</a></td>

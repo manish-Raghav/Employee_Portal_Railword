@@ -26,15 +26,15 @@ body {
   background-color: #fff;
   margin: 30px;
   width: 55vw;
-  height: 110vh;
+  height: auto;
   border-radius: 34px;
 }
 
 .main h1,
 .my-report h1 {
   font-size: 20px;
-  font-weight: bold;
-  margin: 20px 25px;
+  font-weight: 600;
+  margin: 20px 5px;
 }
 
 .filter-container {
@@ -123,7 +123,7 @@ body {
   background-color: #3b0487;
 }
 .report-form h2 {
-  font-weight: bold;
+  font-weight: 700;
   padding: 2px 0 4px 0;
 }
 
