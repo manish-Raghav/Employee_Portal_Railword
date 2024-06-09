@@ -10,6 +10,7 @@ import PandingStatus from "./component/leave/leaveStatus/PandingStatus"
 import ApprovedStatus from "./component/leave/leaveStatus/ApprovedStatus"
 import Solution from "./component/challanges&solution/Solution"
 import './index.css';
+import AdminDashboard from "./component/DashBoard/Admin/AdminDashboard"
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <SideBar />
         </div>
         <div className="rounded-xl sm:col-span-10 min-h-[500px]">
-          <Solution />
+          <AdminDashboard />
         </div>
 
         </div>
