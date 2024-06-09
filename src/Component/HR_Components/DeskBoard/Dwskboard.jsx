@@ -1,9 +1,10 @@
 import React from 'react'
+import MyTimer from './MyTimer'
 
 const Dwskboard = () => {
   return (
-    <div >
-      
+    <div className='' >
+         <MyTimer/>
     </div>
   )
 }

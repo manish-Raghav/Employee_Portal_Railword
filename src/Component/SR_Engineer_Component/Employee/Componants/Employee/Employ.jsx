@@ -3,27 +3,13 @@ import { CiUser } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import EmpData from './EmpData';
-import { Front } from '../../Data/Fronend';
-import { Back } from '../../Data/Backend';
+import { Front } from '../Data/Fronend';
+import { Back } from '../Data/Backend';
 import { FaUsers } from "react-icons/fa";
 import AddEmployee from './AddEmployee';
 
 
-
-
-
-
-
-// className={`nav-link ${
-//   activeLink === "Dashboard" ? "active" : "text-dark"
-// }`}
-// aria-current={activeLink === "Dashboard" ? "page" : undefined}
-// onClick={() => handleSetActive("Dashboard")}
-
-
-
-
-const Employee = () => {
+const Employ = () => {
     const [st,setst] =useState(false)
     const [data,setdata] = useState([]);
     const [isActive, setIsActive] = useState(true);
@@ -63,39 +49,7 @@ const mybt = () =>{
 
   return (
 
-    <section className=' w-[76vw]   z-40 relative left-[4rem] top-16  p-3   '>
-     {
-        st ? <div className='bg-violet-600 w-48 gap-2 flex h-14 items-center  justify-center rounded-md absolute top-0 bottom-8 right-4 cursor-pointer'>
-
-        {
-          isActive ? <div className='flex text-center justify-center'>
-           <div className='p-1'>
-        <IoIosAddCircleOutline className='text-white ' size={20} />
-        </div>
-
-        <div className='text-white text-[1rem]'>
-        <button onClick={mybt} >Add New Employee</button>
-        </div>
-        </div> 
-        :   <div className='flex text-center justify-center'>
-           <div className='p-1'>
-        <FaUsers  className='text-white ' size={20} />
-        </div>
-
-        <div className='text-white text-[1rem]'>
-        <button >View All Employee</button>
-        </div>
-        </div> 
-           
-        }
-       
-        
-        </div>
-        
-        : null 
-     }
-        
-        
+    <section className=' w-[76vw] z-40 relative left-[4rem] top-5 ml-[8%]  p-3 '>
     {
       formisActive ?  <div className='h-[40rem] bg-white w-auto relative top-8  bottom-3  rounded-lg shadow-lg'>
       <div className='flex  bg-white border-b-[1px] border-zinc-400 rounded-lg h-16 justify-between z-10 items-center relative p-2 '>  
@@ -192,4 +146,4 @@ const mybt = () =>{
   )
 }
 
-export default Employee
+export default Employ

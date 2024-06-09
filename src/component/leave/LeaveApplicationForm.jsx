@@ -27,13 +27,13 @@ const LeaveApplicationForm = () => {
 
   return (
     <form
-      className="max-w-[450px]  mx-auto p-8 bg-white shadow-md rounded-lg"
+      className=" h-[110vh] w-[70vh] m-2 px-8 bg-white shadow-md rounded-lg   "
       onSubmit={handleSubmit}
     >
       <h2 className="text-2xl font-bold mb-2">Leave Application Form</h2>
       <p className="text-gray-700 mb-6">Please provide information about your leave.</p>
-      <div className="mb-6">
-        <label className="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Leave Type:</label>
+      <div className="mb-0">
+        <label className="block mb-0 text-sm font-medium text-gray-900 dark:text-white">Leave Type:</label>
         <select
           name="leaveType"
           value={formData.leaveType}
@@ -46,8 +46,8 @@ const LeaveApplicationForm = () => {
           <option value="emergency" className="text-gray-600">Emergency Leave</option>
         </select>
       </div>
-      <div className="mb-4">
-        <label className="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Select Date:</label>
+      <div className="mb-0">
+        <label className="block mb-0 text-sm font-medium text-gray-900 dark:text-white">Select Date:</label>
         <input
           type="date"
           name="leaveDate"
@@ -56,7 +56,7 @@ const LeaveApplicationForm = () => {
           className="w-full p-3 bg-gray-100 rounded-3xl text-gray-500"
         />
       </div>
-      <div className="mb-4">
+      <div className="mb-0">
         <label className="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Select Period:</label>
         <select
           name="leavePeriod"
@@ -70,8 +70,8 @@ const LeaveApplicationForm = () => {
           <option value="multiple-days" className="text-gray-600">Multiple Days</option>
         </select>
       </div>
-      <div className="mb-4">
-        <label className="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Reason:</label>
+      <div className="mb-0">
+        <label className="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Reason:</label>
         <textarea
           name="reason"
           value={formData.reason}
@@ -80,8 +80,8 @@ const LeaveApplicationForm = () => {
           placeholder="Reason for leave..."
         />
       </div>
-      <div className="mb-4">
-        <label className="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Attachment:</label>
+      <div className="mb-0">
+        <label className="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Attachment:</label>
         <input
           type="file"
           accept=".pdf,.png,.jpg"
@@ -89,7 +89,7 @@ const LeaveApplicationForm = () => {
           className="w-full p-3 bg-gray-100 rounded-3xl text-gray-600"
         />
       </div>
-      <div className="mb-4">
+      <div className="mb-2">
         <label className="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Jobs Will Be Covered By:</label>
         <select
           name="coverBy"
@@ -104,7 +104,7 @@ const LeaveApplicationForm = () => {
       </div>
       <button
         type="submit"
-        className="w-full bg-blue-500 text-white p-4 rounded-lg"
+        className="w-full bg-blue-500 h-12 text-white  rounded-lg items-center justify-center"
       >
         Apply leave
       </button>

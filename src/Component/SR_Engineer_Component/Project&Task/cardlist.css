@@ -1,0 +1,86 @@
+.unique-container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #a2a1a8;
+    border-radius: 28px;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .unique-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .unique-header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .unique-see-all-btn {
+    background: none;
+    border: none;
+    color: #04a4f4;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    position: absolute;
+    margin-left: 450px;
+    width: 127px;
+  }
+  
+  .unique-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .unique-card {
+    width: calc(50% - 10px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .unique-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 22px;
+  }
+  
+  .unique-card h2 {
+    font-size: 24px;
+    color: #04a4f4;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .unique-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: center;
+    /* margin-left: 20px; */
+  }
+  
+  .unique-view-all-btn {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 2px solid #04a4f4;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #04a4f4;
+    width: 50%;
+  }

@@ -9,57 +9,56 @@ import Complete from "./Complete";
 const Layout = () => {
   const [showTask, setShowTask] = useState(false);
   const [showComplete, setShowComplete] = useState(false);
-  const [showTable, setShowTable] = useState(false); // State to control table visibility
-  const [tableData, setTableData] = useState(null); // State to store table data
+  const [showTable, setShowTable] = useState(false);
+  const [selectedProject, setSelectedProject] = useState("");
+  const [showAssignTaskForm, setShowAssignTaskForm] = useState(true); // Initially showing AssignTaskForm
 
-  const handleCardClick = (cardName) => {
-    setShowTask(cardName === "Assigned Project");
-    setShowComplete(cardName === "Complete Project");
-    setShowTable(true); // Show table for any project clicked
+  const handleCardClick = (name, type) => {
+    setShowTask(name === "Assigned Project");
+    setShowComplete(name === "Complete Project");
+
+    setShowTable(true);
+    setShowAssignTaskForm(false); // Hide AssignTaskForm when a card is clicked
   };
 
   const handleSeeAllClick = (isAssignedProject) => {
     setShowTask(isAssignedProject);
     setShowComplete(!isAssignedProject);
-    setShowTable(true); // Show table for See All clicked
+
+    setShowTable(true);
   };
 
   return (
-    <>
-     
-      <Container fluid>
+    <Container fluid>
+      <Row>
+        <Col xs={5}>
+          {!showTask && !showComplete && showAssignTaskForm && (
+            <AssignTaskForm />
+          )}{" "}
+          {/* Conditionally render AssignTaskForm */}
+        </Col>
+        <Col xs={7}>
+          {!showTable && !showTask && !showComplete && (
+            <>
+              <Col xs={12}>
+                <Data onCardClick={handleCardClick} />
+              </Col>
+              <Col xs={12} className="p-0">
+                <CardsList onSeeAllClick={handleSeeAllClick} />
+              </Col>
+            </>
+          )}
+        </Col>
+      </Row>
+      {showTable && (
         <Row>
-          
-          <Col xs={10}>
-            <Row>
-              <Col xs={5}>
-                {!showTask && !showComplete && <AssignTaskForm />}
-              </Col>
-              <Col xs={7}>
-                {!showTable && !showTask && !showComplete && (
-                  <>
-                    <Col xs={12}>
-                      <Data onCardClick={handleCardClick} />
-                    </Col>
-                    <Col xs={12} className="p-0">
-                      <CardsList onSeeAllClick={handleSeeAllClick} />
-                    </Col>
-                  </>
-                )}
-              </Col>
-            </Row>
-            {showTable && (
-              <Row>
-                <Col xs={12}>
-                  {showTask && <Task onCardClick={handleCardClick} />}
-                  {showComplete && <Complete onCardClick={handleCardClick} />}
-                </Col>
-              </Row>
-            )}
+          <Col xs={12}>
+            {showTask && <Task onCardClick={handleCardClick} />}
+            {showComplete && <Complete onCardClick={handleCardClick} />}
           </Col>
         </Row>
-      </Container>
-    </>
+      )}
+    </Container>
   );
 };
 

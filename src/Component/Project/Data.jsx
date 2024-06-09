@@ -1,5 +1,6 @@
 import React from "react";
 import { PiNoteDuotone } from "react-icons/pi";
+import { Row, Col } from "react-bootstrap";
 import "./data.css";
 
 function Data({ onCardClick }) {
@@ -19,22 +20,31 @@ function Data({ onCardClick }) {
   ];
 
   const handleCardClick = (name) => {
-    onCardClick(name); // Pass the clicked card's name to the parent component
+    onCardClick(name);
   };
 
   return (
-    <div className="dataCard">
-      {obj.map((e, index) => (
-        <div className="sCard" key={index} onClick={() => handleCardClick(e.name)}>
-          <e.url size={25} />
-          <div className="data">
-            <span className="font">{e.name}</span>
-            <span className="fontColor">{e.count}</span>
-          </div>
-          <hr className="separator" />
-          <div className="updateInfo">Update: {e.date}</div>
-        </div>
-      ))}
+    <div className="unique-dataCard">
+      <Row className="w-100">
+        {obj.map((e, index) => (
+          <Col
+            sm={6}
+            key={index}
+            onClick={() => handleCardClick(e.name)}
+            className="p-0"
+          >
+            <div className="unique-sCard mt-2">
+              <e.url size={30} className="unique-icon" />
+              <div className="unique-data-details">
+                <span className="unique-data-font">{e.name}</span>
+                <span className="unique-data-font">{e.count}</span>
+              </div>
+              <hr className="unique-separator" />
+              <div className="updateInfo-data-info">Update: {e.date}</div>
+            </div>
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 }

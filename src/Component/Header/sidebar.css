@@ -1,0 +1,35 @@
+.sidebar-item :hover{
+    background-color: #D1D1D1;
+}
+
+.active-sidebar-item {
+    background-color: #1C274C !important;
+    color: white !important;
+}
+
+.header{
+    box-shadow: 0px 24px 48px -8px #274C7729;
+    background-color: #F8F8FB;
+    border-radius: 0px 0px 20px 20px !important;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: #E7ECEF !important;
+}
+
+.date-text {
+    color: #516F91;
+}
+
+.w-30 {
+    width: 35%;
+}
+
+.text-main-dark {
+    color: #274C77 !important;
+}
+
+.sidebar-item{
+    font-size: 18px;
+}
