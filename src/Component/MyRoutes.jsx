@@ -7,10 +7,9 @@ import Dwskboard from './DeskBoard/Dwskboard'
 import Report from './Report/Report'
 import Profile from './Profile/Profile'
 import Feedback from './FeedBack/Feedback'
-// import Layout from './Project/Layout'
-// import CardDetails from './Project/CardDetails'
-import Layout from './srEngineer/Layout'
-import CardDetails from './srEngineer/CardDetails'
+
+
+
 
 const MyRoutes = () => {
     return (
@@ -24,7 +23,8 @@ const MyRoutes = () => {
            <Route path='/Leave' element={<LeaveComp/>} />
            <Route path='/reporting' element={<Report />} />
            <Route path='/feedback' element={<Feedback/>} />
-           <Route path='/card/:cardId' element={<CardDetails />} /> //routing for view all
+
+           {/* <Route path='/Leave' element={<LeaveComp /> } /> */}
         </Routes>
         </div>
       )
