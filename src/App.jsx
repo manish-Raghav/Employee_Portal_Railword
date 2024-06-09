@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import Attendance from './components/Attendance'
-import TimeCard from './components/TimeCard'
-// import EditProfile from './components/EditProfile'
+import React from 'react'
+import ProjectTasks from './Pages/ProjectTasks'
+import ProjectTable from './components/ProjectTable'
+import ProjectDescription from './Pages/ProjectDescription'
 
-
-function App() {
- 
-
+const App = () => {
   return (
-    <>
-    <TimeCard/>
-     <Attendance/> 
-     {/* <TimeCard/> */}
-     
-    </>
+    <div>
+      {/* <ProjectTasks/> */}
+      {/* <ProjectTable/> */}
+      <ProjectDescription/>
+
+    </div>
   )
 }
 
