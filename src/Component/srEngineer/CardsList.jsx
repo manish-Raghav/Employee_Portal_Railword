@@ -1,7 +1,6 @@
-// CardsList.jsx
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchCards } from "../src/features/cardsSlice";
+import { fetchCards } from "./features/cardsSlice";
 import { Link } from "react-router-dom";
 import './cardlist.css';
 
@@ -34,21 +33,21 @@ const CardsList = ({ onSeeAllClick }) => {
   const cardsToShow = showAll ? cards : cards.slice(0, 2);
 
   return (
-    <div className="container mt-3">
-      <div className="header ">
+    <div className="unique-container mt-3">
+      <div className="unique-header">
         <h1>Projects</h1>
-        <button className="see-all-btn" onClick={handleSeeAllClick}>
+        <button className="unique-see-all-btn" onClick={handleSeeAllClick}>
           {showAll ? "See Less" : "See All"}
         </button>
       </div>
-      <div className="card-container">
+      <div className="unique-card-container">
         {cardsToShow.map((card, index) => (
-          <div className="card" key={index}>
+          <div className="unique-card" key={index}>
             <img src={card.photo} alt={card.title} />
             <h2>{card.heading}</h2>
             <p>{card.text}</p>
             <Link to={`/card/${index}`}>
-              <button className="view-all-btn">View All</button>
+              <button className="unique-view-all-btn">View All</button>
             </Link>
           </div>
         ))}

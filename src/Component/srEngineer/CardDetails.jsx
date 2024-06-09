@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./carddetails.css";
 import { AiOutlineTeam, AiOutlineCheck } from "react-icons/ai";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
@@ -18,7 +18,7 @@ const CardDetails = () => {
   return (
     <div className="card-details">
       <div className="card-content">
-        <div className="datas">
+        <div className="data">
           <h2>{projectId}</h2> {/* Displaying unique ID */}
           <h2>{card.heading}</h2>
           <h6>UI/UX Design, App Design</h6>

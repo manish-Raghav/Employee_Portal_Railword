@@ -1,47 +1,57 @@
-.card-details {
-  width: 60%;
-  margin: auto;
-  padding: 20px;
+.unique-card-details {
+  width: 100%;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
   text-align: left;
+  margin-top: 20px;
 }
 
-.card-details video {
-  height: 100px;
+.unique-card-details video {
+  height: 111px;
   border-radius: 10px;
 }
 
-.video {
-  width: 30%;
+.unique-video {
+  width: 35%;
+  margin-top: 40px;
 }
 
-.card-content {
+.unique-card-content {
   display: flex;
   justify-content: space-between;
 }
 
-.card-details h3,
-.card-details h2,
-.card-details h6,
-.card-details p,
-.card-details ul {
+.unique-card-details h3,
+.unique-card-details h2,
+.unique-card-details h6,
+.unique-card-details p,
+.unique-card-details ul {
   margin: 22px 15px;
 }
 
-.data {
+.unique-datas {
   width: 70%;
 }
 
-.data h6 span {
+.unique-datas h6 span {
   color: #007bff;
 }
 
-.data h6 span svg {
+.unique-datas h6 span svg {
   color: #000000;
 }
 
-.back-btn {
+.unique-datas h6 {
+  font-weight: 700;
+}
+
+.unique-datas h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.unique-back-btn {
   margin-top: 20px;
   padding: 10px 20px;
   border: none;
@@ -53,18 +63,18 @@
   display: inline-block;
 }
 
-ul {
+.unique-data-ul ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-li {
+.unique-data-ul li {
   display: flex;
   align-items: center;
   margin: 5px 0;
 }
 
-.check-icon {
+.unique-check-icon {
   margin-right: 8px;
   color: #fff;
   background-color: #007bff;

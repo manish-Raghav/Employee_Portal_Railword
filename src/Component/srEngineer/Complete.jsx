@@ -112,11 +112,11 @@ function Complete({ onCardClick }) {
   };
 
   return (
-    <div>
+    <div className="">
       <div className="row">
         <div className="col-md-6">
           <h5
-            className="Taskcard"
+            className="card custom-task-card"
             onClick={() => handleHeadingClick("Assign Project")}
           >
             Assign Project
@@ -124,7 +124,7 @@ function Complete({ onCardClick }) {
         </div>
         <div className="col-md-6">
           <h5
-            className="Taskcard"
+            className="card custom-task-card"
             onClick={() => handleHeadingClick("Complete Project")}
           >
             Complete Project
@@ -132,7 +132,7 @@ function Complete({ onCardClick }) {
         </div>
       </div>
 
-      <Table striped bordered hover className="full-width-table">
+      <Table  className="custom-full-width-table">
         <thead>
           <tr>
             <th>S.N.</th>

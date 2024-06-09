@@ -1,44 +1,78 @@
 .card-details {
-  width: 60%;
   margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   text-align: left;
-}
-
-.card-details video {
-  height: 111px;
-  border-radius: 10px;
-}
-
-.video {
-  width: 30%;
+  background-color: #fff;
+  max-width: 900px;
 }
 
 .card-content {
   display: flex;
   justify-content: space-between;
-}
-
-.card-details h3,
-.card-details h2,
-.card-details h6,
-.card-details p,
-.card-details ul {
-  margin: 22px 15px;
+  align-items: flex-start;
 }
 
 .data {
-  width: 70%;
+  width: 65%;
 }
 
-.data h6 span {
+.video {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-details h2 {
+  margin: 22px 15px 10px;
+}
+
+.card-details h6 {
+  margin: 8px 15px;
+}
+
+.card-details p {
+  margin: 10px 15px;
+}
+
+.card-details ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.card-details li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.check-icon {
+  margin-right: 8px;
+  color: #fff;
+  background-color: #007bff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.message-icon {
+  font-size: 25px;
   color: #007bff;
 }
 
-.data h6 span svg {
-  color: #000000;
+.time-icon {
+  margin-left: 10px;
+}
+
+.message-icon {
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .back-btn {
@@ -52,37 +86,3 @@
   text-decoration: none;
   display: inline-block;
 }
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  margin: 5px 0;
-}
-
-.check-icon {
-  margin-right: 8px;
-  color: #fff;
-  background-color: #007bff;
-  font-size: 20px;
-  border-radius: 50%;
-}
-.message-icon{
-  font-size: 25px;
-  color: #007bff;
-}
-.time-icon {
-  margin-left: 10px;
-  vertical-align: middle;
-}
-
-.message-icon {
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-

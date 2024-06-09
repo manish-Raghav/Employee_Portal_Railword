@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./assigntaskform.css";
+
 const AssignTaskForm = () => {
   const [formData, setFormData] = useState({
     employee: "",
@@ -25,130 +26,93 @@ const AssignTaskForm = () => {
   };
 
   return (
-    <div className="assign-form ml-3 mt-3">
-    <form
-      className="max-w-lg  mx-auto bg-white shadow-md"
-      onSubmit={handleSubmit}
-    >
-      <h2 className="text-2xl font-bold mb-2">Assign Task</h2>
-      <p className="text-gray-700 mb-6">
-        Please provide information
-      </p>
-      <div className="mb-1">
-        <label className="block text-sm font-medium text-gray-900 dark:text-white">
-          Select Employee Or Group:
-        </label>
-        <select
-          name="employee"
-          value={formData.leaveType}
-          onChange={handleChange}
-          className="w-full  rounded-3xl bg-gray-100 border-gray-300 text-gray-900"
-          placeholder="select employee or group"
-        >
-          <option value="" className="text-gray-400">
-            Employee 1
-          </option>
-          <option value="sick" className="text-gray-600">
-          Employee 2
-          </option>
-          <option value="vacation" className="text-gray-600">
-          Employee 3
-          </option>
-          <option value="emergency" className="text-gray-600">
-          Employee 4
-          </option>
-        </select>
-      </div>
-      <div className="mb-1">
-        <label className="block  text-sm font-medium text-gray-900 dark:text-white">
-          Start Date:
-        </label>
-        <input
-          type="date"
-          name="startDate"
-          value={formData.leaveDate}
-          onChange={handleChange}
-          className="w-full bg-gray-100 rounded-3xl text-gray-500"
-        />
-      </div>
-      <div className="mb-1">
-        <label className="block text-sm font-medium text-gray-900 dark:text-white">
-          End Date:
-        </label>
-        <input
-          type="date"
-          name="endDate"
-          value={formData.leaveDate}
-          onChange={handleChange}
-          className="w-full bg-gray-100 rounded-3xl text-gray-500"
-        />
-      </div>
-      <div className="mb-1">
-        <label className="block text-sm font-medium text-gray-900 dark:text-white">
-          Task assigned:
-        </label>
-        <select
-          name="taskassign"
-          value={formData.leavePeriod}
-          onChange={handleChange}
-          className="w-full bg-gray-100 rounded-3xl text-gray-600"
-          placeholder="Who will cover your work ..."
-        >
-          <option value="" className="text-gray-400">
-            example 1
-          </option>
-          <option value="half-day" className="text-gray-600">
-            example 2
-          </option>
-          <option value="full-day" className="text-gray-600">
-          example 3
-          </option>
-          <option value="multiple-days" className="text-gray-600">
-          example 4
-                    </option>
-        </select>
-      </div>
-      <div className="mb-1">
-        <label className="block text-sm font-medium text-gray-900 dark:text-white">
-          Technology Used:
-        </label>
-        <textarea
-          name="technology"
-          value={formData.reason}
-          onChange={handleChange}
-          className="w-full bg-gray-100 rounded-3xl text-gray-600"
-          placeholder="Enter Detail..."
-        />
-      </div>
-      <div className="mb-1">
-        <label className="block text-sm font-medium text-gray-900 dark:text-white">
-          Details:
-        </label>
-        <textarea
-          name="details"
-          style={{height:150}}
-          value={formData.reason}
-          onChange={handleChange}
-          className="w-full bg-gray-100 text-gray-600"
-          placeholder="Enter Detail..."
-        />
-      </div>
-      <div className="mb-1">
-        <input
-          accept=".pdf,.png,.jpg"
-          type="file"
-          onChange={handleFileChange}
-          className="w-5  bg-gray-100 rounded-3xl text-gray-600"
+    <div className="custom-assign-form">
+      <form className="custom-form" onSubmit={handleSubmit}>
+        <h2>Assign Task</h2>
+        <p>Please provide information</p>
+        <div className="custom-form-group">
+          <label>Select Employee Or Group:</label>
+          <select
+            name="employee"
+            value={formData.employee}
+            onChange={handleChange}
+            className="custom-form-control"
+          >
+            <option value="">Select employee or group</option>
+            <option value="employee1">Employee 1</option>
+            <option value="employee2">Employee 2</option>
+            <option value="employee3">Employee 3</option>
+            <option value="employee4">Employee 4</option>
+          </select>
+        </div>
+        <div className="custom-form-group">
+          <label>Start Date:</label>
+          <input
+            type="date"
+            name="startDate"
+            value={formData.startDate}
+            onChange={handleChange}
+            className="custom-form-control"
           />
-      </div>
-      
-      <button
-        type="submit"
-        className="w-full task_button p-4"
-      >
-        Assign Task
-      </button>
-    </form>
+        </div>
+        <div className="custom-form-group">
+          <label>End Date:</label>
+          <input
+            type="date"
+            name="endDate"
+            value={formData.endDate}
+            onChange={handleChange}
+            className="custom-form-control"
+          />
+        </div>
+        <div className="custom-form-group">
+          <label>Task assigned:</label>
+          <select
+            name="taskassign"
+            value={formData.taskassign}
+            onChange={handleChange}
+            className="custom-form-control"
+          >
+            <option value="">Select task</option>
+            <option value="example1">Example 1</option>
+            <option value="example2">Example 2</option>
+            <option value="example3">Example 3</option>
+            <option value="example4">Example 4</option>
+          </select>
+        </div>
+        <div className="custom-form-group">
+          <label>Technology Used:</label>
+          <textarea
+            name="technology"
+            value={formData.technology}
+            onChange={handleChange}
+            className="custom-form-control"
+            placeholder="Enter Detail..."
+          />
+        </div>
+        <div className="custom-form-group">
+          <label>Details:</label>
+          <textarea
+            name="details"
+            value={formData.details}
+            onChange={handleChange}
+            className="custom-form-control"
+            placeholder="Enter Detail..."
+            style={{ height: 150 }}
+          />
+        </div>
+        <div className="custom-form-group">
+          <input
+            accept=".pdf,.png,.jpg"
+            type="file"
+            onChange={handleFileChange}
+            className="custom-form-control"
+          />
+        </div>
+        <button type="submit" className="custom-task-button">
+          Assign Task
+        </button>
+      </form>
     </div>
   );
 };

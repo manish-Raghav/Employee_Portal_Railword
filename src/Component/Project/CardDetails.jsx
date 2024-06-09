@@ -14,9 +14,9 @@ const CardDetails = () => {
   }
 
   return (
-    <div className="card-details">
-      <div className="card-content">
-        <div className="datas">
+    <div className="unique-card-details">
+      <div className="unique-card-content">
+        <div className="unique-datas">
           <h2>{projectId}</h2> {/* Displaying unique ID */}
           <h2>{card.heading}</h2>
           <h6>UI/UX Design, App Design</h6>
@@ -33,16 +33,16 @@ const CardDetails = () => {
           <h2>Description</h2>
           <p>{card.text}</p>
           <h2>Technology Use</h2>
-          <ul>
+          <ul className="unique-data-ul">
             {card.technologies.map((tech, i) => (
               <li key={i}>
-                <AiOutlineCheck className="check-icon" />
+                <AiOutlineCheck className="unique-check-icon" />
                 {tech}
               </li>
             ))}
           </ul>
         </div>
-        <div className="video">
+        <div className="unique-video">
           <video controls>
             <source src={card.video} type="video/mp4" />
             Your browser does not support the video tag.

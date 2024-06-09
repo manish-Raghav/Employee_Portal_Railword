@@ -1,20 +1,21 @@
-/* task.css */
-.TaskContainer {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .TaskContainer table {
-    width: 100%;
-  }
-  
+.unique-TaskContainer {
+  width: 100%;
+  padding: 10px;
+}
 
-  .full-width-table {
-    width: 100%;
-  }
-  
-  .TaskContainer {
-    width: 100%;
-    padding: 0 15px;
-  }
-  
+.unique-TaskContainer table {
+  width: 100%;
+}
+
+.unique-full-width-table {
+  width: 100%;
+}
+
+.unique-TaskContainer {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.unique-Taskcard {
+  cursor: pointer;
+}

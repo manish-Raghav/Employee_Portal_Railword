@@ -83,14 +83,14 @@ function AllData({ onCardClick }) {
 
   return (
     <div>
-      <div className="TaskContainer mt-3 pt-3">
-        <tr>
-          <td colSpan="6" className="completed-projects-heading">
-            Completed Projects
-          </td>
-        </tr>
-        <Table className="full-width-table tablerow">
+      <div className="custom-task-container">
+        <Table className="custom-full-width-table">
           <thead>
+            <tr>
+              <td colSpan="6" className="custom-completed-projects-heading">
+                Assigned Tasks
+              </td>
+            </tr>
             <tr>
               <th>Employee/Group</th>
               <th>Employee Id</th>
@@ -118,39 +118,41 @@ function AllData({ onCardClick }) {
             ))}
           </tbody>
           {completedTasks.length > 0 && (
-            <tr>
-              <td colSpan="6" className="completed-projects-heading">
-                Completed Projects
-              </td>
-            </tr>
+            <>
+              <thead>
+                <tr>
+                  <td colSpan="6" className="custom-completed-projects-heading">
+                    Completed Projects
+                  </td>
+                </tr>
+                <tr>
+                  <th>Employee/Group</th>
+                  <th>Employee Id</th>
+                  <th>Department</th>
+                  <th>Task Detail</th>
+                  <th>Applied Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {completedTasks.map((task, index) => (
+                  <tr key={index} onClick={() => onCardClick(task.name)}>
+                    <td>
+                      <span className="custom-ml-2">
+                        <FcBusinessman size={20}/>
+                      </span>
+                      {task.Employee_Group}
+                    </td>
+                    <td>{task.Employee_id}</td>
+                    <td>{task.Department}</td>
+                    <td>{task.Task_Detail}</td>
+                    <td>{task.Applied_Date}</td>
+                    <td style={statusColors[task.status]}>{task.status}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </>
           )}
-          <thead>
-            <tr>
-              <th>Employee/Group</th>
-              <th>Employee Id</th>
-              <th>Department</th>
-              <th>Task Detail</th>
-              <th>Applied Date</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {completedTasks.map((task, index) => (
-              <tr key={index} onClick={() => onCardClick(task.name)}>
-                <td >
-                  <span className="ml-2">
-                    <FcBusinessman  size={20}/>
-                  </span>
-                  {task.Employee_Group}
-                </td>
-                <td>{task.Employee_id}</td>
-                <td>{task.Department}</td>
-                <td>{task.Task_Detail}</td>
-                <td>{task.Applied_Date}</td>
-                <td style={statusColors[task.status]}>{task.status}</td>
-              </tr>
-            ))}
-          </tbody>
         </Table>
       </div>
     </div>
