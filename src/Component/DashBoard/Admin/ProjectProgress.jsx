@@ -28,7 +28,7 @@ const ProjectProgress = ({data}) => {
         borderColor: "#6A4FF0",
         borderWidth: 1,
         borderRadius: 10,
-        barThickness: 20, // Adjust this for bar width
+        barThickness: 15, // Adjust this for bar width
       },
     ],
   }
@@ -66,19 +66,18 @@ const ProjectProgress = ({data}) => {
 
   return (
     <div
-      className="p-4 bg-white shadow-lg rounded-lg"
+      className="p-4 bg-white border rounded-lg"
       style={{width: "700px", height: "450px"}}
     >
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">Project Progress Overview</h3>
-        <div className="text-gray-500 cursor-pointer border-2 rounded-lg p-2"> 
+        <div className="text-gray-500 cursor-pointer border-2 rounded-lg p-2">
           <DatePicker
             selected={startDate}
             onChange={date => setStartDate(date)}
             customInput={<CustomInput />}
             dateFormat="MMMM d, yyyy"
           />
-          
         </div>
       </div>
 
@@ -90,7 +89,7 @@ const ProjectProgress = ({data}) => {
 }
 const CustomInput = React.forwardRef(({value, onClick}, ref) => (
   <button className="text-gray-500 " onClick={onClick} ref={ref}>
-    {moment(value).format("MMMM D, YYYY")} 
+    {moment(value).format("MMMM D, YYYY")}
   </button>
 ))
 export default ProjectProgress
