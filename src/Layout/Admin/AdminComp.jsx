@@ -10,9 +10,11 @@ import Header from '../../Component/Header/Header';
 import Testbar from '../../Component/Header/Testbar';
 import Profile from '../../Component/Profile/Profile';
 import AdminDashboard from '../../Component/Admin_Comp/Dashboard/AdminDashboard';
-
-
-
+import Attendance from '../../Component/Attendance/Attendance';
+import Employee from '../../Component/Admin_Employee/pages/Employee'
+// import LeaveComp from '../../Component/leave/LeaveComp';
+// import ReportList from '../../Component/SR_Engineer_Component/Report/ReportList';
+// import Feedback from '../../Component/FeedBack/Feedback';
 const AdminComp = () => {
 
     const links = [
@@ -45,8 +47,8 @@ const AdminComp = () => {
            <Routes>
            <Route path='/dashboard' element ={<AdminDashboard />} />
        
-        
-           {/* <Route path='/attendance' element={<Attendance/>} /> */}
+           <Route path = '/Employee' element={<Employee/>}/>
+           <Route path='/attendance' element={<Attendance/>} />
            <Route path='/profile' element={<Profile/>} />
            {/* <Route path='/project' element={<Layout/>} />*/}
            {/* <Route path='/Leave' element={<LeaveComp/>} />  */}

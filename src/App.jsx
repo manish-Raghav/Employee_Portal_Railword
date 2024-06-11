@@ -10,8 +10,12 @@ import SrComp from './Layout/SR_Engineer/SrComp';
 import Jr_Comp from './Layout/JR_Engineer/Jr_Comp';
 import AdminComp from './Layout/Admin/AdminComp';
 import Employee2 from './Component/SR_Engineer_Component/Employee/components/Employee/Employee2'
-import AssignTaskForm from './Component/Project/AssignTaskForm';
-
+import SR_AssignTaskForm from './Component/SR_Engineer_Component/Employee/components/AssignForm/SR_AssignTaskForm';
+import Admin_Employee2 from './Component/Admin_Employee/components/Employee/Admin_Employee2'
+import Profile from './Component/Admin_Employee/components/Profile_data/Profile'
+import Attandance from './Component/Admin_Employee/components/Profile_data/Attandance';
+import ProjectTask from './Component/Admin_Employee/components/Profile_data/ProjectTask';
+import Leave from './Component/Admin_Employee/components/Profile_data/Leave';
 function App() {
   return (
     <>
@@ -37,7 +41,13 @@ function App() {
         <Route path="/Employee/*" element={<Jr_Comp />} />
         <Route path="/Admin/*" element={<AdminComp />} />
         < Route path="/Senoir_Employee/view_all" element={<Employee2/>}/>
-        < Route path="/Senoir_Employee/create_team" element={<AssignTaskForm/>}/>
+        < Route path="/Senoir_Employee/create_team" element={<SR_AssignTaskForm/>}/>
+        < Route path='/Admin/view_all' element={<Admin_Employee2/>}/>
+        < Route path='/Admin/profile/user' element={<Profile/>}/>
+        < Route path='/Admin/attandance' element={<Attandance/>}/>
+        < Route path='/Admin/project-task' element={<ProjectTask/>}/>
+        < Route path='/Admin/leave/user' element={<Leave/>}/>
+
         </Routes>
     </>
   )

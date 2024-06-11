@@ -1,0 +1,219 @@
+/* Profile.css */
+body{
+  background-color: #e7ecef;
+}
+
+.profile-menu .profile-item {
+  margin-bottom: 10px;
+}
+
+.profile-menu .profile-item a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profile-menu .profile-item a:hover {
+  background-color: #1b14f3;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* .profile-menu .profile-item a.active {
+  background-color: #007bff; 
+  color: white; 
+} */
+
+.profile-menu .profile-item a .icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.profile-icon {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* For a circular icon */
+}
+
+
+
+
+
+
+
+/* Profile.css */
+
+.profile-icon {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* For a circular icon */
+}
+
+
+
+
+
+
+
+
+
+
+/* Profile.css */
+
+.profile-menu .profile-item {
+margin-bottom: 5px;
+}
+
+.profile-menu .profile-item a {
+  display: block;
+padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.profile-menu .profile-item a.active {
+  background-color: #007bff; /* Bootstrap's primary blue color */
+  color: white; /* Ensures the text color is readable */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-card {
+width: 1000px;
+   margin-top: 10%;
+   margin-left: 20%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid rgb(224, 218, 218);
+  }
+  
+  .profile-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .profile-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-header li {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .profile-details {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .profile-menu {
+width: 260px;
+    background-color: white;
+padding: 10px;
+    border: 1px solid #e6dbdb;
+    border-radius: 20px;
+
+  }
+  
+  .profile-menu .profile-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-menu .profile-item.active {
+    background-color: #e9ecef;
+  }
+  
+  .profile-menu .profile-item i {
+    margin-right: 10px;
+  }
+  
+  .profile-info {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .profile-info table {
+    width: 250%;
+    border-collapse: collapse;
+  }
+  
+  .profile-info th,
+  .profile-info td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f2e9e9;
+  }
+
+/* Profile.css */
+
+/* Profile.css */
+
+.project-task-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* .task-table {
+  flex: 2;
+  margin: 0 10px; 
+} */
+
