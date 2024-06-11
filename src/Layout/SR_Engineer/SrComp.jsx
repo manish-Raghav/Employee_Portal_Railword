@@ -7,6 +7,8 @@ import Attendance from '../../Component/Attendance/Attendance'
 import Feedback from '../../Component/FeedBack/Feedback'
 import Header from '../../Component/Header/Header'
 import Deskboard from '../../Component/SR_Engineer_Component/Deshboard/Deskboard'
+import Employee from '../../Component/SR_Engineer_Component/Employee/pages/Employee/index'
+// import Employee2 from '../../Component/SR_Engineer_Component/Employee/components/Employee/Employee2'
 
 import ChallengesAndSolutions from '../../Component/SR_Engineer_Component/Challange&Solution/ChallengesAndSolutions'
 import { FaUser, FaUsers, FaCalendarCheck, FaFileAlt, FaProjectDiagram, FaChartBar, FaComments } from 'react-icons/fa';
@@ -54,7 +56,9 @@ const SrComp = () => {
          <div>
            <Routes>
            <Route path='/dashboard' element ={<Deskboard />} />
-       
+           <Route path='/Employee' element ={<Employee/>} />
+           {/* <Route path='/Senoir_Employee/view_all' element ={<Employee2/>} /> */}
+          
         
            <Route path='/attendance' element={<Attendance/>} />
            <Route path='/profile' element={<Profile/>} />

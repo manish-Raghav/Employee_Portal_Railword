@@ -9,6 +9,8 @@ import  {Routes, Route } from 'react-router-dom';
 import SrComp from './Layout/SR_Engineer/SrComp';
 import Jr_Comp from './Layout/JR_Engineer/Jr_Comp';
 import AdminComp from './Layout/Admin/AdminComp';
+import Employee2 from './Component/SR_Engineer_Component/Employee/components/Employee/Employee2'
+import AssignTaskForm from './Component/Project/AssignTaskForm';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/Senoir_Employee/*" element={<SrComp />} />
         <Route path="/Employee/*" element={<Jr_Comp />} />
         <Route path="/Admin/*" element={<AdminComp />} />
+        < Route path="/Senoir_Employee/view_all" element={<Employee2/>}/>
+        < Route path="/Senoir_Employee/create_team" element={<AssignTaskForm/>}/>
         </Routes>
     </>
   )

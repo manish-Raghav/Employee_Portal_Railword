@@ -8,6 +8,7 @@ import React from 'react'
 // import Profile from './Profile/Profile'
 // import Feedback from './FeedBack/Feedback'
 // import Layout from './Project/Layout'
+// import Employee2 from "./SR_Engineer_Component/Employee/components/Employee/Employee2";
 
 
 
@@ -26,6 +27,7 @@ const MyRoutes = () => {
            <Route path='/Leave' element={<LeaveComp/>} />
            <Route path='/reporting' element={<Report />} />
            <Route path='/feedback' element={<Feedback/>} />
+           {/* <Route path='view_all' element={<Employee2/>}/> */}
 
            {/* <Route path='/Leave' element={<LeaveComp /> } /> */}
         </Routes>

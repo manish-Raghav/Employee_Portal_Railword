@@ -118,7 +118,7 @@ const AssignTaskForm = () => {
           />
         </div>
         
-        <button type="submit" className="w-full bg-blue-500 text-white p-4">
+        <button type="submit" className="w-full bg-blue-500 text-white p-4 rounded-full text-2xl">
           Assign Task
         </button>
       </form>
