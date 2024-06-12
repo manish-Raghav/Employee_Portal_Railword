@@ -1,0 +1,56 @@
+ .custom-task-card {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom-task-card:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .custom-task-card.active {
+    background-color: #ffd580;
+    color: orange;
+  }
+  
+  .custom-task-card.complete {
+    background-color: lightgreen;
+    color: green;
+  }
+  
+  .custom-full-width-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .custom-full-width-table th,
+  .custom-full-width-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .custom-full-width-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .custom-full-width-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .custom-full-width-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .custom-full-width-table td {
+    transition: background-color 0.3s, color 0.3s;
+  } 
+  .assign-table{
+    width: 100%;
+  }

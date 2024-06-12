@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CardsList from "./CardsList";
 import Data from "./Data";
+<<<<<<< HEAD
 // import Task from "./Task";
 // import Complete from "./Complete";
 import Task from "../srEngineer/Task";
 import Complete from "../srEngineer/Complete";
+=======
+import Task from "./Task";
+import Complete from "./Complete";
+>>>>>>> 22156151a3e07dbe38b269715ab7d2b5f7568f5b
 
 const Layout = () => {
   const [showTask, setShowTask] = useState(false);

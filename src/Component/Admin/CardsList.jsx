@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+<<<<<<< HEAD
 import { fetchCards } from "../srEngineer/ReduxToolkit/features/cardsSlice";
+=======
+import { fetchCards } from "./features/cardsSlice";
+>>>>>>> 22156151a3e07dbe38b269715ab7d2b5f7568f5b
 import { Link } from "react-router-dom";
 import './cardlist.css';
 

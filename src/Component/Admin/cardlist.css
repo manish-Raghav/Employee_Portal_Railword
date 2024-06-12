@@ -43,7 +43,11 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   /* text-align: center; */
+<<<<<<< HEAD
   /* padding-left: 7px; */
+=======
+  padding-left: 10px;
+>>>>>>> 22156151a3e07dbe38b269715ab7d2b5f7568f5b
 }
 
 .unique-card img {
