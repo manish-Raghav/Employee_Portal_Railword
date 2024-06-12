@@ -1,0 +1,16 @@
+.custom-task-container {
+  border-radius: 28px;
+  background-color: #fff;
+  margin-top: 16px; /* equivalent to mt-3 */
+  padding-top: 16px; /* equivalent to pt-3 */
+}
+.custom-completed-projects-heading {
+  font-weight: 700;
+}
+.custom-full-width-table thead th {
+  color: #b1abab !important;
+  font-weight: 400;
+}
+.custom-ml-2 {
+  margin-left: 8px;
+}

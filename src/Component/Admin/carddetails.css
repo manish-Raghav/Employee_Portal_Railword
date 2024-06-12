@@ -1,0 +1,83 @@
+.unique-card-details {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.unique-card-details video {
+  height: 111px;
+  border-radius: 10px;
+}
+
+.unique-video {
+  width: 35%;
+  margin-top: 40px;
+}
+
+.unique-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unique-card-details h3,
+.unique-card-details h2,
+.unique-card-details h6,
+.unique-card-details p,
+.unique-card-details ul {
+  margin: 22px 15px;
+}
+
+.unique-datas {
+  width: 70%;
+}
+
+.unique-datas h6 span {
+  color: #007bff;
+}
+
+.unique-datas h6 span svg {
+  color: #000000;
+}
+
+.unique-datas h6 {
+  font-weight: 700;
+}
+
+.unique-datas h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.unique-back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.unique-data-ul ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.unique-data-ul li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.unique-check-icon {
+  margin-right: 8px;
+  color: #fff;
+  background-color: #007bff;
+  font-size: 20px;
+  border-radius: 50%;
+}

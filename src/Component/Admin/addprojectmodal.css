@@ -1,0 +1,48 @@
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.modal-content {
+  height: 100%;
+  margin: 10px;
+  border-radius: 0; /* Optional: Remove border-radius */
+}
+
+.modal-body {
+  height: calc(100% - 100px); /* Adjust as needed */
+  overflow-y: auto; /* Add scrollbar if content exceeds modal height */
+}
+
+.modal-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.modal-dialog {
+  width: 200vw; /* Set width to 100% of viewport width */
+  margin: 0; /* Remove any margin */
+  max-width: 100%; /* Ensure the modal does not exceed the viewport width */
+}
+
+.modal-content {
+  border-radius: 0; /* Optional: Remove border-radius */
+}
+.modal-body .form-control {
+  margin-top: 25px;
+}
+
+.modal-body .form-control {
+  height: 50px;
+}
+
+.modal-body .form-control-textarea {
+  height: 150px;
+}
+.modal-body h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+}

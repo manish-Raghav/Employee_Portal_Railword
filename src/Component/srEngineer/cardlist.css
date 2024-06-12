@@ -30,8 +30,9 @@
   cursor: pointer;
   text-decoration: underline;
   position: absolute;
-  margin-left: 450px;
-  width: 127px;
+  margin-left: 413px;
+  /* margin-left: 380px; */
+  /* width: 127px; */
 }
 
 .unique-card-container {

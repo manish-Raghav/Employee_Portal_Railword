@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchCards } from "./features/cardsSlice";
+import { fetchCards } from "../srEngineer/ReduxToolkit/features/cardsSlice";
 import { Link } from "react-router-dom";
-import "./cardlist.css";
+import './cardlist.css';
 
-const CardsList = ({ onCardClick, onSeeAllClick }) => {
+const CardsList = ({ onSeeAllClick }) => {
   const dispatch = useDispatch();
   const cards = useSelector((state) => state.cards.cards);
   const status = useSelector((state) => state.cards.status);
@@ -19,7 +19,7 @@ const CardsList = ({ onCardClick, onSeeAllClick }) => {
 
   const handleSeeAllClick = () => {
     setShowAll(!showAll);
-    onSeeAllClick();
+    onSeeAllClick(showAll); // Pass the current showAll state to the parent component
   };
 
   if (status === "loading") {
@@ -30,28 +30,24 @@ const CardsList = ({ onCardClick, onSeeAllClick }) => {
     return <div>{error}</div>;
   }
 
-  const cardsToShow = showAll ? cards : cards.slice(0, 2);
+  const cardsToShow = showAll ? cards : cards.slice(0, 3);
 
   return (
-    <div className="custom-container mt-3">
-      <div className="custom-header">
+    <div className="unique-container mt-3">
+      <div className="unique-header">
         <h1>Projects</h1>
-        <button className="custom-see-all-btn" onClick={handleSeeAllClick}>
-          See All
+        <button className="unique-see-all-btn card" onClick={handleSeeAllClick}>
+          {showAll ? "See Less" : "See All"}
         </button>
       </div>
-      <div className="custom-card-container">
+      <div className="unique-card-container">
         {cardsToShow.map((card, index) => (
-          <div
-            className="custom-card"
-            key={index}
-            onClick={() => onCardClick(card)}
-          >
+          <div className="unique-card" key={index}>
             <img src={card.photo} alt={card.title} />
             <h2>{card.heading}</h2>
             <p>{card.text}</p>
             <Link to={`/card/${index}`}>
-              <button className="custom-view-all-btn">View All</button>
+              <button className="unique-view-all-btn">View All</button>
             </Link>
           </div>
         ))}

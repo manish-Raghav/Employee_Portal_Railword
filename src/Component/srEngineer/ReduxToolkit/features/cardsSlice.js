@@ -19,19 +19,19 @@ export const fetchCards = createAsyncThunk('cards/fetchCards', async () => {
     "Cybersecurity#",
     "Digital Marketing#"
   ];
-const manager =[
-  "Arun",
-  "Aman",
-  "Naman",
-  "lokendra",
-  "Harsh",
-  "Manish",
-  "Sohil",
-  "Sourabh",
-  "Arvind",
-  "Ashish",
-  "Aveenesh"
-]
+  const manager =[
+    "Arun",
+    "Aman",
+    "Naman",
+    "lokendra",
+    "Harsh",
+    "Manish",
+    "Sohil",
+    "Sourabh",
+    "Arvind",
+    "Ashish",
+    "Aveenesh"
+  ]
   return data.map((item, index) => ({
     photo: `https://via.placeholder.com/150?text=Image+${index + 1}`,
     title: `Card Title ${index + 1}`,

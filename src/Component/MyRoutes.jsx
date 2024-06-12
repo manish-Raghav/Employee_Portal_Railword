@@ -7,10 +7,14 @@ import Dwskboard from './DeskBoard/Dwskboard'
 import Report from './Report/Report'
 import Profile from './Profile/Profile'
 import Feedback from './FeedBack/Feedback'
-
-
-
-
+// import Layout from './Project/Layout'
+// import CardDetails from './Project/CardDetails'
+// import Layout from './srEngineer/Layout'
+// import CardDetails from './srEngineer/CardDetails'
+// import Layout from './Admin/Layout'
+// import CardDetails from './Admin/CardDetails'
+import Layout from './Employeeproject/Layout'
+import CardDetails from './Employeeproject/CardDetails'
 const MyRoutes = () => {
     return (
         <div>
@@ -23,8 +27,7 @@ const MyRoutes = () => {
            <Route path='/Leave' element={<LeaveComp/>} />
            <Route path='/reporting' element={<Report />} />
            <Route path='/feedback' element={<Feedback/>} />
-
-           {/* <Route path='/Leave' element={<LeaveComp /> } /> */}
+           <Route path='/card/:cardId' element={<CardDetails />} />
         </Routes>
         </div>
       )

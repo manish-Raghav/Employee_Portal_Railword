@@ -1,0 +1,49 @@
+.custom-data-card {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.custom-s-cards {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* width: 157px;
+  height: 160px; */
+}
+.card{
+  border-radius: 25px;
+}
+.custom-s-card svg {
+  padding-left: 10px;
+}
+
+.custom-data {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.custom-font {
+  font-size: 18px;
+}
+
+.custom-font-color {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.custom-separator {
+  margin: 7px;
+  padding-left: 10px;
+}
+
+.custom-update-info {
+  font-size: 13px;
+  opacity: 0.5;
+  padding-left: 10px;
+}

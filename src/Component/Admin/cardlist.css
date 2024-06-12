@@ -1,0 +1,77 @@
+/* cardlist.css */
+
+.unique-container {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.unique-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.unique-header h1{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.unique-see-all-btn {
+  /* background-color: #007bff; */
+  color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  text-decoration: underline;
+  font-size: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.unique-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.unique-card {
+  width: calc(33.33% - 20px); /* Adjust as needed */
+  margin: 10px;
+  height: auto;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+  /* padding-left: 7px; */
+}
+
+.unique-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.unique-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.unique-card p {
+  margin-bottom: 10px;
+  display: flex;
+  
+}
+
+.unique-view-all-btn {
+  /* background-color: #28a745; */
+  color: #007bff;
+  border: none;
+  border: 2px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+}

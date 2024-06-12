@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import CardsList from "./CardsList";
-import AssignTaskForm from "./AssignTaskForm";
+// import CardsList from "./CardsList";
+import CardsList from "../srEngineer/CardsList";
+// import AssignTaskForm from "./AssignTaskForm";
+import AssignTaskForm from "../srEngineer/AssignTaskForm";
 import Data from "./Data";
-import Task from "./Task";
-import Complete from "./Complete";
+// import Data from "../srEngineer/Data";
+// import Task from "./Task";
+import Task from "../srEngineer/Task";
+// import Complete from "./Complete";
+import Complete from "../srEngineer/Complete";
 
 const Layout = () => {
   const [showTask, setShowTask] = useState(false);
