@@ -22,7 +22,7 @@ export default function EmployeePage() {
       </Helmet>
 
       {/* main content section */}
-      <div className="w-[150%] pb-[7px] ml-[25px]">
+      <div className="w-[145%] pb-[7px] ml-[38px]">
         <div className="flex flex-col gap-1.5">
           {/* header section */}
           {/* <Header /> */}
@@ -198,7 +198,7 @@ export default function EmployeePage() {
                       </Text>
                       </Link>
                     </div>
-                    <div className="flex flex-col items-start gap-5">
+                    <div className="flex flex-col items-start gap-4">
                       <div className="h-px w-full self-stretch bg-[#a2a1a833]" />
                       <div className="flex w-[37%] items-center gap-2.5 md:w-full">
                         <Img

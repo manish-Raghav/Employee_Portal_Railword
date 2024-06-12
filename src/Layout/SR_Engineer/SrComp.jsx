@@ -7,7 +7,7 @@ import Attendance from '../../Component/Attendance/Attendance'
 import Feedback from '../../Component/FeedBack/Feedback'
 import Header from '../../Component/Header/Header'
 import Deskboard from '../../Component/SR_Engineer_Component/Deshboard/Deskboard'
-import Employee from '../../Component/SR_Engineer_Component/Employee/pages/Employee/index'
+import Employee from '../../Component/SR_Engineer_Component/Employee/Pages/Employee'
 // import Employee2 from '../../Component/SR_Engineer_Component/Employee/components/Employee/Employee2'
 
 import ChallengesAndSolutions from '../../Component/SR_Engineer_Component/Challange&Solution/ChallengesAndSolutions'

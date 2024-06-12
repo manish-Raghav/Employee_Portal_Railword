@@ -37,7 +37,7 @@ export default function EmployeePage() {
               {/* <Sidebar1 /> */}
 
               {/* search and content section */}
-              <div className="mt-[25px] mx-[30px] ml-[55px]  flex flex-1 flex-col items-end gap-3.5 rounded-[20px] bg-[#ffffff] p-[13px] md:self-stretch md:p-5">
+              <div className="mt-[25px] mx-[30px] ml-[15px]  flex flex-1 flex-col items-end gap-3.5 rounded-[20px] bg-[#ffffff] p-[13px] md:self-stretch md:p-5">
                 <Input
                   name="Search Bar"
                   placeholder={`Search`}
