@@ -60,18 +60,15 @@ td {
 }
 
 .pending {
-  background-color: #ffcc00;
-  color: #333;
+  color: #ffcc00;
 }
 
 .approved {
-  background-color: #4caf50;
-  color: #fff;
+  color: #4caf50;
 }
 
 .reject {
-  background-color: #f44336;
-  color: #fff;
+  color: #f44336;
 }
 
 .modal {
